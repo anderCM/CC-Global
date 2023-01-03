@@ -1,0 +1,19 @@
+@media (min-width: 375px) {
+  #footer img {
+    width: 9rem;
+  }
+
+  #footer p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #footer img {
+    width: 15.6rem;
+  }
+
+  #footer p {
+    font-size: 0.86rem;
+  }
+}

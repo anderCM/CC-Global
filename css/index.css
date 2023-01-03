@@ -1,0 +1,131 @@
+body {
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+:root {
+  --cc-black: #3e3e3e;
+  --cc-orange: #ec5242;
+  --cc-gray: #868686;
+  --cc-gray-stronger: #595959;
+}
+
+@media (min-width: 375px) {
+  #home {
+    background: url("../assets/images/mobile/home-mobile.png");
+    height: 520px;
+    padding-top: 10rem;
+  }
+
+  .title {
+    background: url("../assets/images/mobile/home-title-mobile.png");
+    height: 134px;
+    background-repeat: no-repeat;
+  }
+
+  #partners-container {
+    width: 95%;
+  }
+
+  .home-description p {
+    font-size: 0.75rem;
+  }
+
+  .schedule h5 {
+    font-weight: 900;
+    color: var(--cc-gray-stronger);
+  }
+
+  .schedule p {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--cc-gray);
+  }
+
+  #main-program {
+    background: url("../assets/images/mobile/program-mobile.png") #282b32;
+  }
+
+  .title-hr {
+    width: 10%;
+    color: var(--cc-orange);
+  }
+
+  .program-box {
+    background: rgba(59, 62, 69, 0.5);
+  }
+
+  .program-text {
+    font-size: 0.62rem;
+    line-height: 22px;
+  }
+
+  #main-program button {
+    background: var(--cc-orange);
+  }
+
+  #speakers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .speaker-img {
+    width: 107px;
+    height: 106px;
+  }
+
+  .speaker-name {
+    font-size: 0.95rem;
+  }
+
+  .speaker-position {
+    font-size: 0.7rem;
+    color: var(--cc-orange);
+  }
+
+  .speaker-hr {
+    width: 8%;
+  }
+
+  .speaker-desc {
+    font-size: 0.68rem;
+    line-height: 14px;
+  }
+
+  #speakers button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    background: url("../assets/images/desktop/home-title-desktop.png");
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .home-description p {
+    font-size: 1.6rem;
+  }
+
+  #home {
+    height: 887px;
+  }
+
+  .schedule h5 {
+    font-size: 2.6rem;
+  }
+
+  .schedule p {
+    font-size: 1.7rem;
+  }
+
+  .more {
+    display: flex;
+  }
+
+  #view-more {
+    display: none;
+  }
+}
