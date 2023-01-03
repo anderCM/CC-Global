@@ -1,3 +1,14 @@
+body {
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+:root {
+  --cc-black: #3e3e3e;
+  --cc-orange: #ec5242;
+  --cc-gray: #868686;
+  --cc-gray-stronger: #595959;
+}
+
 @media (min-width: 375px) {
   #main-nav {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -82,7 +93,7 @@
   }
 
   .nav-item-special {
-    width: 100%;
+    width: 150px;
     color: var(--cc-orange) !important;
     background-color: #fff;
     border: 5px solid var(--cc-orange);

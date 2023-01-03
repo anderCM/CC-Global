@@ -15,7 +15,7 @@ export const Navbar = `<nav class="navbar d-none d-md-flex top-navbar p-1 justif
                     <span class="navbar-toggler-icon"></span>
               </button>
                 <div class="w-100 text-center">
-                    <a class="navbar-brand" href="#home"><img src="assets/images/logo.png" alt="CC Global Summit 2015 Logo"></a>
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="CC Global Summit 2015 Logo"></a>
                 </div>
               <div class="offcanvas offcanvas-start" tabindex="-1" id="navbar-2">
                 <div class="offcanvas-header">
@@ -24,7 +24,7 @@ export const Navbar = `<nav class="navbar d-none d-md-flex top-navbar p-1 justif
                 <div class="offcanvas-body p-0">
                   <ul class="navbar-nav justify-content-end flex-grow-1 gap-md-1 gap-lg-5">
                     <li class="nav-item">
-                      <a class="nav-link mx-4 mx-md-auto" aria-current="page" href="#">About</a>
+                      <a class="nav-link mx-4 mx-md-auto" aria-current="page" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link mx-4 mx-md-auto" href="#">Program</a>

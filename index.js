@@ -1,6 +1,7 @@
 /* eslint-disable array-callback-return */
 import { Navbar } from './Components/Navbar.js';
 import { Partners } from './Components/Partners.js';
+import { Footer } from './Components/Footer.js';
 
 const navContainer = document.getElementById('main-nav');
 
@@ -20,9 +21,13 @@ programs.map((program) => {
   const programBox = document.createElement('div');
   programBox.classList.add('row', 'py-2', 'mx-auto', 'program-box', 'w-100');
 
+  const imgContainer = document.createElement('div');
+  imgContainer.classList.add('col-3', 'mx-auto', 'col-md-12', 'text-center');
+
   const imgIcon = document.createElement('img');
-  imgIcon.classList.add('col-3', 'mx-auto', 'col-md-12');
   imgIcon.setAttribute('src', icon);
+
+  imgContainer.appendChild(imgIcon);
 
   const pTitle = document.createElement('p');
   pTitle.classList.add('col-3', 'col-md-12', 'm-auto', 'text-center');
@@ -33,7 +38,7 @@ programs.map((program) => {
   pDescrip.classList.add('col-6', 'col-md-12', 'm-auto', 'text-white', 'text-md-center', 'program-text');
   pDescrip.textContent = text;
 
-  programBox.append(imgIcon, pTitle, pDescrip);
+  programBox.append(imgContainer, pTitle, pDescrip);
   programsContainer.appendChild(programBox);
 });
 
@@ -65,25 +70,24 @@ speakers.map((speaker, i) => {
   } = speaker;
 
   const speakerBox = document.createElement('div');
-  speakerBox.classList.add('row', 'w-100', 'm-auto', 'speaker-box');
+  speakerBox.classList.add('row', 'col-12', 'col-md-5', 'mx-auto', 'speaker-box', 'my-3', 'mx-md-0', 'px-md-0');
 
-  const data = `<div class="col-4 col-md-2">
+  const data = `<div class="col-4">
                   <img class="speaker-img" src="${photo}" alt="${name}" />
                 </div>
-                <div class="col-8 col-md-4">
+                <div class="col-8">
                   <div class="d-flex flex-column gap-1">
                     <h5 class="fw-bold speaker-name">
                       ${name}
                     </h5>
-                    <p class="speaker-position m-auto">${position}</p>
+                    <p class="speaker-position m-md-auto">${position}</p>
                     <hr class="speaker-hr mt-0 mb-2">
                     <p class="speaker-desc m-auto">${description}</p>
                   </div>
                 </div>`;
   speakerBox.innerHTML = data;
   if (i > 1) {
-    speakerBox.classList.add('more');
-    speakerBox.style.display = 'none';
+    speakerBox.classList.add('more', 'hidden');
   }
   speakerContainer.append(speakerBox);
 });
@@ -94,14 +98,14 @@ moreBtn.addEventListener('click', () => {
   const boxes = document.querySelectorAll('.speaker-box');
   if (!viewController) {
     boxes.forEach((box) => {
-      if (box.classList.value.includes('more')) box.style.display = 'flex';
+      if (box.classList.value.includes('more')) box.classList.remove('hidden');
     });
-    moreBtn.innerHTML = 'LESS <i class="active fa-solid fa-angle-down"></i>';
+    moreBtn.innerHTML = 'LESS <i class="active fa-solid fa-angle-up"></i>';
     viewController = true;
     return;
   }
   boxes.forEach((box) => {
-    if (box.classList.value.includes('more')) box.style.display = 'none';
+    if (box.classList.value.includes('more')) box.classList.add('hidden');
   });
   moreBtn.innerHTML = 'MORE <i class="active fa-solid fa-angle-down"></i>';
   viewController = false;
@@ -109,3 +113,6 @@ moreBtn.addEventListener('click', () => {
 
 const partnersContainer = document.getElementById('partners');
 partnersContainer.innerHTML = Partners;
+
+const footerContainer = document.getElementById('footer');
+footerContainer.innerHTML = Footer;

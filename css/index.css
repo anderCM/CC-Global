@@ -63,12 +63,6 @@ body {
     background: var(--cc-orange);
   }
 
-  #speakers-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
   .speaker-img {
     width: 107px;
     height: 106px;
@@ -94,6 +88,14 @@ body {
 
   #speakers button {
     font-size: 0.8rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .footer-extra {
+    display: none;
   }
 }
 
@@ -127,5 +129,14 @@ body {
 
   #view-more {
     display: none;
+  }
+
+  #main-program button {
+    background: none;
+    text-decoration: underline;
+  }
+
+  .footer-extra {
+    display: block;
   }
 }
