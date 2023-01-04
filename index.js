@@ -1,4 +1,3 @@
-/* eslint-disable array-callback-return */
 import { Navbar } from './Components/Navbar.js';
 import { Partners } from './Components/Partners.js';
 import { Footer } from './Components/Footer.js';
@@ -39,24 +38,24 @@ programs.map((program) => {
   pDescrip.textContent = text;
 
   programBox.append(imgContainer, pTitle, pDescrip);
-  programsContainer.appendChild(programBox);
+  return programsContainer.appendChild(programBox);
 });
 
 const speakers = [
   {
-    name: 'Yochai Benkler', position: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School', description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006', photo: 'assets/images/speakers/Yochai Benkler.png',
+    name: 'Yochai Benkler', position: 'Senior Software Developer with more than 15 years experience', description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006', photo: 'assets/images/speakers/Yochai Benkler.png',
   },
   {
-    name: 'SohYeong Noh', position: 'Director of Art Centre Nabi and a board member of CC Korea', description: 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.', photo: 'assets/images/speakers/SohYeong Noh.png',
+    name: 'SohYeong Noh', position: 'Software Architect and Team Lead at Google', description: 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.', photo: 'assets/images/speakers/SohYeong Noh.png',
   },
   {
-    name: 'Lila tretikov', position: 'Executive Director of the Wikimedia Foundation', description: 'Lila Tretikov is the Executive of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languag-es and used by nearly half a billion people around the world every month.', photo: 'assets/images/speakers/Lila tretikov.png',
+    name: 'Lila tretikov', position: 'Executive Director of the Wikipedia Foundation', description: 'Lila Tretikov is the Executive of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languag-es and used by nearly half a billion people around the world every month.', photo: 'assets/images/speakers/Lila tretikov.png',
   },
   {
-    name: 'Kilnam Chon', position: '', description: 'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame', photo: 'assets/images/speakers/Kilnam Chon.png',
+    name: 'Kilnam Chon', position: 'CEO and Founder of Technotion org', description: 'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame', photo: 'assets/images/speakers/Kilnam Chon.png',
   },
   {
-    name: 'Julia Leda', position: 'President of Young Pirates of Europe', description: 'European ingetration, political democracy and participation of youth through online as her major condern, Reda’s report outlining potential changes to EU copyright law was approved by the Parliament in July', photo: 'assets/images/speakers/Julia Leda.png',
+    name: 'Julia Leda', position: 'President of Red Hat organization', description: 'European ingetration, political democracy and participation of youth through online as her major condern, Reda’s report outlining potential changes to EU copyright law was approved by the Parliament in July', photo: 'assets/images/speakers/Julia Leda.png',
   },
   {
     name: 'Ryan Merkley', position: 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open-source move-ment', description: 'CEO of Creativve Commons, ex COO of the Mozilla Foundation', photo: 'assets/images/speakers/Ryan Merkley.png',
@@ -86,10 +85,8 @@ speakers.map((speaker, i) => {
                   </div>
                 </div>`;
   speakerBox.innerHTML = data;
-  if (i > 1) {
-    speakerBox.classList.add('more', 'hidden');
-  }
-  speakerContainer.append(speakerBox);
+  if (i > 1) speakerBox.classList.add('more', 'hidden');
+  return speakerContainer.append(speakerBox);
 });
 
 let viewController = false;
