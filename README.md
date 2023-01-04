@@ -82,7 +82,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [View](https://github.com/anderCM/CC-Global)
+- [View](https://andercm.github.io/CC-Global/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,8 +173,14 @@ If you like this project give a coffee
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+I would like to thank `Cindy Shin in Behance` for sharing the original idea. 
 
-I would like to thank my team
+<details>
+  <summary>Original idea</summary>
+  <ul>
+    <li><a href="https://www.behance.net/adagio07">Cindy Shin in Behance.</a></li>
+  </ul>
+</details>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,7 +203,5 @@ I would like to thank my team
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

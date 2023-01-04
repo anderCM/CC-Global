@@ -1,0 +1,106 @@
+@media (min-width: 375px) {
+  #about {
+    width: 100%;
+    height: 450px;
+    background: url("../assets/images/mobile/home-mobile.png");
+  }
+
+  .title {
+    background: url("../assets/images/mobile/about-title-mobile.png");
+    height: 134px;
+    background-repeat: no-repeat;
+    margin-top: 4.6rem;
+    background-size: contain;
+  }
+
+  .description p {
+    font-size: 0.87rem;
+    line-height: 25px;
+  }
+
+  .contact-info p {
+    font-size: 0.75rem;
+    color: #7a7a7a;
+    line-height: 25px;
+  }
+
+  hr {
+    width: 2rem;
+    color: #a04038;
+    background: #a04038;
+    border: 2px solid #a04038;
+  }
+
+  #identity p {
+    color: #838383;
+    font-size: 0.9rem;
+  }
+
+  #past-events p {
+    font-size: 0.75rem;
+    color: #838383;
+  }
+
+  .footer-extra {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #about {
+    height: 723px;
+    background: url("../assets/images/desktop/about-desktop.png");
+    background-color: #f7f7f8;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    background: url("../assets/images/desktop/about-title-desktop.png");
+    margin-top: 10rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+  }
+
+  #identity {
+    border-bottom: 3px solid #fafafa;
+  }
+
+  #identity h5,
+  #past-events h5 {
+    font-size: 1.9rem;
+  }
+
+  #identity p,
+  #past-events p {
+    font-size: 1rem;
+  }
+
+  #identity p::after {
+    content: " After online public voting and Selection Committee’s judging process, the logo from Naresh Agrawal won the prize. After consultation with Mr. Agrawal, we optimized the prize-winning-logo for this year’s summit as follows:";
+  }
+
+  #identity img {
+    content: url("../assets/images/desktop/about-logo-desktop.png");
+  }
+
+  #footer {
+    background: #2e2e2e;
+  }
+
+  #footer img {
+    content: url("../assets/images/desktop/about-footer-logo-desktop.png");
+  }
+
+  #footer p {
+    color: #fff;
+  }
+
+  .footer-extra {
+    display: block;
+  }
+}
