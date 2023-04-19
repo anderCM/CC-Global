@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  <img src="assets/images/logo.png" alt="logo" width="140"  height="auto" />
+  <img src="assets/images/logo.png" alt="logo" width="150"  height="auto" />
   <br/>
 
   <h3><b>CC Global Summit 2015 Capstone Project</b></h3>
