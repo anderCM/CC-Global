@@ -7,11 +7,32 @@ const navContainer = document.getElementById('main-nav');
 navContainer.innerHTML = Navbar;
 
 const programs = [
-  { title: 'Lecture', text: 'Listen to the speakers from various countries about the messages of sharing and opening.', icon: 'assets/icons/lecture.png' },
-  { title: 'CC Exhibition', text: 'Appreciate various creations applying CC license of artists, organized from Art Center Nabi', icon: 'assets/icons/exhibition.png' },
-  { title: 'Forum', text: 'Have the time to share your thoughts and opinions with experts for each topic.', icon: 'assets/icons/forum.png' },
-  { title: 'Workshop', text: 'Try creating your own work using open source license rather than just watching at it.', icon: 'assets/icons/workshop.png' },
-  { title: 'CC Ignite', text: 'get opportunities to network with CC affiliates around the world, also after the summit.', icon: 'assets/icons/ignite.png' }];
+  {
+    title: 'Lecture',
+    text: 'Listen to the speakers from various countries about the messages of sharing and opening.',
+    icon: 'assets/icons/lecture.png',
+  },
+  {
+    title: 'CC Exhibition',
+    text: 'Appreciate various creations applying CC license of artists, organized from Art Center Nabi',
+    icon: 'assets/icons/exhibition.png',
+  },
+  {
+    title: 'Forum',
+    text: 'Have the time to share your thoughts and opinions with experts for each topic.',
+    icon: 'assets/icons/forum.png',
+  },
+  {
+    title: 'Workshop',
+    text: 'Try creating your own work using open source license rather than just watching at it.',
+    icon: 'assets/icons/workshop.png',
+  },
+  {
+    title: 'CC Ignite',
+    text: 'get opportunities to network with CC affiliates around the world, also after the summit.',
+    icon: 'assets/icons/ignite.png',
+  },
+];
 const programsContainer = document.getElementById('programs-container');
 
 programs.map((program) => {
